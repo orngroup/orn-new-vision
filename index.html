@@ -10,8 +10,8 @@
 /* ── Reset ──────────────────────────────────────────────────── */
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 :root{
-  --navy:#1A2E4A; --navy2:#17426E; --navy3:#113257;
-  --dkblue:#1E3A5F; --midblue:#243B55;
+  --navy:#000000; --navy2:#111111; --navy3:#1a1a1a;
+  --dkblue:#111111; --midblue:#222222;
   --red:#E8373A; --yel:#F5C200; --grn:#2BAD4E; --blu:#1A73E8;
   --grey:#8A94A8; --lgrey:#F4F6FA; --bd:#D4DBE8; --bd2:#B0BDD4; --dk2:#3D4F6E;
   --s-bg:#EEF8E4; --s-bd:#3D8A14; --s-tx:#1E5A08;
@@ -31,13 +31,13 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 .page{max-width:1400px;margin:0 auto;display:flex;flex-direction:column;gap:0}
 
 /* ── Header ─────────────────────────────────────────────────── */
-.hdr{background:var(--navy);border-radius:var(--r-lg) var(--r-lg) 0 0;padding:18px 28px 14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;position:relative;overflow:hidden}
+.hdr{background:#000;border-radius:var(--r-lg) var(--r-lg) 0 0;padding:18px 28px 14px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px;position:relative;overflow:hidden}
 .hdr::after{content:'';position:absolute;bottom:0;left:0;right:0;height:3px;background:linear-gradient(to right,var(--red) 25%,var(--yel) 25% 50%,var(--grn) 50% 75%,var(--blu) 75%)}
 .hdr-logo-name{font-size:22px;font-weight:800;color:#fff;letter-spacing:-.5px;line-height:1}
 .hdr-logo-sub{font-size:9px;font-weight:600;color:var(--yel);letter-spacing:.14em;text-transform:uppercase;margin-top:3px}
 .hdr-centre{text-align:center}
 .hdr-title{font-size:16px;font-weight:700;color:#fff;line-height:1.2;margin-bottom:3px}
-.hdr-sub{font-size:10px;color:rgba(142,184,224,.8);letter-spacing:.03em}
+.hdr-sub{font-size:10px;color:rgba(255,255,255,.75);letter-spacing:.03em}
 .hdr-badge{display:inline-block;background:var(--yel);color:var(--navy);font-size:8px;font-weight:700;padding:2px 8px;border-radius:99px;letter-spacing:.08em}
 
 /* ── Tab bar ─────────────────────────────────────────────────── */
@@ -55,22 +55,22 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 ══════════════════════════════════════════════════════════════ */
 .box{border-radius:var(--r);padding:10px 14px;display:flex;flex-direction:column;gap:3px}
 .box-title{font-size:12px;font-weight:700;line-height:1.2}
-.box-sub{font-size:10.5px;color:var(--dk2);line-height:1.4}
-.box-note{font-size:9px;color:var(--grey);line-height:1.35;margin-top:1px}
+.box-sub{font-size:10.5px;color:#1a1a1a;line-height:1.4}
+.box-note{font-size:9px;color:#3a3a3a;line-height:1.35;margin-top:1px}
 .box-dark{background:var(--navy);padding:10px 16px;border-radius:var(--r);display:flex;flex-direction:column;gap:3px;align-items:center;text-align:center}
 .box-dark .box-title{color:var(--yel)}
-.box-dark .box-sub{color:rgba(142,184,224,.85);font-size:10.5px}
+.box-dark .box-sub{color:rgba(255,255,255,.85);font-size:10.5px}
 .box-midblue{background:var(--midblue);padding:10px 16px;border-radius:var(--r);display:flex;flex-direction:column;gap:3px;align-items:center;text-align:center}
 .box-midblue .box-title{color:#fff;font-size:12px}
-.box-midblue .box-sub{color:rgba(142,184,224,.85);font-size:10.5px}
+.box-midblue .box-sub{color:rgba(255,255,255,.85);font-size:10.5px}
 .divider{display:flex;align-items:center;gap:10px;margin:4px 0 2px}
 .divider::before,.divider::after{content:'';flex:1;height:1px;background:var(--bd2)}
-.divider span{font-size:9px;font-weight:600;color:var(--grey);text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
+.divider span{font-size:9px;font-weight:600;color:#3a3a3a;text-transform:uppercase;letter-spacing:.1em;white-space:nowrap}
 .row-2col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px}
 .row-3col{display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;align-items:start}
 .bu-header{border-radius:var(--r) var(--r) 0 0;padding:10px 12px 9px;text-align:center}
 .bu-header .bu-title{font-size:13px;font-weight:800;color:#fff;line-height:1.1;margin-bottom:3px}
-.bu-header .bu-sub{font-size:10px;color:rgba(144,184,216,.85);margin-bottom:2px}
+.bu-header .bu-sub{font-size:10px;color:rgba(255,255,255,.8);margin-bottom:2px}
 .bu-header .bu-head{font-size:9px;color:var(--yel);font-weight:500}
 .fit-wrapper{display:flex;flex-direction:column;border-radius:var(--r);overflow:hidden;border:1.5px solid var(--navy3)}
 .fit-dest{background:var(--d-bg);border-top:1px solid var(--d-bd);padding:7px 12px 8px;text-align:center}
@@ -95,17 +95,17 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 .ratio-chip.rc-s{background:var(--s-bg);color:var(--s-tx);border-color:var(--s-bd)}
 .ratio-chip.rc-o{background:var(--v-bg);color:var(--v-tx);border-color:var(--v-bd)}
 .ratio-chip.rc-v{background:var(--cred-bg);color:var(--cred-tx);border-color:var(--cred-bd)}
-.ratio-label{font-size:8px;color:var(--grey);text-align:center;margin-bottom:6px}
+.ratio-label{font-size:8px;color:#3a3a3a;text-align:center;margin-bottom:6px}
 .ops-phase2{background:var(--f2-bg);border:1px solid var(--f2-bd);border-radius:4px;padding:6px 8px;margin-top:4px}
 .ops-phase2 .p2-title{font-size:9px;font-weight:600;color:var(--f2-tx);margin-bottom:2px}
 .ops-phase2 .p2-sub{font-size:9px;color:var(--f2-tx);opacity:.8}
 .box-horiz{background:var(--dkblue);padding:10px 12px;border-radius:var(--r);text-align:center;display:flex;flex-direction:column;gap:3px}
 .box-horiz .box-title{color:#fff;font-size:11.5px}
-.box-horiz .box-sub{color:rgba(142,184,224,.85);font-size:10px}
-.box-horiz .box-note{color:rgba(142,184,224,.55);font-size:9px}
+.box-horiz .box-sub{color:rgba(255,255,255,.85);font-size:10px}
+.box-horiz .box-note{color:rgba(255,255,255,.75);font-size:9px}
 .box-horiz .box-tag{display:inline-block;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.15);border-radius:99px;font-size:8.5px;color:rgba(255,255,255,.6);padding:2px 8px;margin-top:3px;align-self:center}
 .legend{display:flex;flex-wrap:wrap;gap:8px 16px;padding:10px 14px;background:#fff;border:1px solid var(--bd);border-radius:var(--r);margin-top:4px}
-.legend-item{display:flex;align-items:center;gap:6px;font-size:9px;color:var(--dk2)}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:9px;color:#1a1a1a}
 .legend-swatch{width:12px;height:12px;border-radius:3px;border:1px solid;flex-shrink:0}
 
 /* ══════════════════════════════════════════════════════════════
@@ -137,14 +137,14 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 .odh-left{}
 .odh-icon{font-size:11px;margin-bottom:2px}
 .odh-title{font-size:11px;font-weight:800;line-height:1.2;margin-bottom:1px}
-.odh-sub{font-size:8.5px;opacity:.7;line-height:1.3}
+.odh-sub{font-size:8.5px;color:#3a3a3a;line-height:1.3}
 .odh-count{font-size:8px;background:rgba(0,0,0,.12);border-radius:99px;padding:1px 6px;margin-top:3px;display:inline-block;font-weight:600}
-.odh-toggle{font-size:9px;opacity:.5;flex-shrink:0;margin-top:2px;transition:transform .2s}
+.odh-toggle{font-size:9px;color:#555;flex-shrink:0;margin-top:2px;transition:transform .2s}
 .odh-toggle.open{transform:rotate(180deg)}
 
 /* Director slot */
 .org-director{padding:8px 12px;background:rgba(0,0,0,.03);border-bottom:1px solid var(--bd);display:flex;align-items:center;gap:8px}
-.dir-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);white-space:nowrap;flex-shrink:0}
+.dir-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3a3a3a;white-space:nowrap;flex-shrink:0}
 .dir-input{flex:1;border:1px solid var(--bd);border-radius:4px;padding:4px 8px;font-size:11px;font-weight:600;color:var(--navy);font-family:'Plus Jakarta Sans',sans-serif;outline:none;transition:border-color .15s;background:#fff}
 .dir-input:focus{border-color:var(--blu)}
 .dir-input::placeholder{color:var(--bd2);font-weight:400;font-style:italic}
@@ -158,23 +158,23 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 .rc-icon{font-size:13px;flex-shrink:0}
 .rc-info{flex:1;min-width:0}
 .rc-title{font-size:10.5px;font-weight:700;color:var(--navy);line-height:1.2}
-.rc-reports{font-size:8.5px;color:var(--grey)}
+.rc-reports{font-size:8.5px;color:#3a3a3a}
 .rc-name-wrap{display:flex;align-items:center;gap:4px}
 .rc-name-input{flex:1;border:none;border-bottom:1px dashed var(--bd2);background:transparent;font-size:10px;color:var(--dk2);font-family:'Plus Jakarta Sans',sans-serif;padding:1px 2px;outline:none;min-width:0;font-weight:500}
 .rc-name-input:focus{border-bottom-color:var(--blu)}
 .rc-name-input::placeholder{color:var(--bd2);font-style:italic}
 .rc-qty{font-size:9px;font-weight:700;background:var(--bd);color:var(--dk2);padding:1px 5px;border-radius:99px;flex-shrink:0}
-.rc-expand-icon{font-size:8px;color:var(--grey);flex-shrink:0;transition:transform .2s}
+.rc-expand-icon{font-size:8px;color:#555;flex-shrink:0;transition:transform .2s}
 .role-card.expanded .rc-expand-icon{transform:rotate(180deg);color:var(--blu)}
 
 /* Role detail panel */
 .rc-detail{display:none;padding:8px 10px 10px;border-top:1px solid var(--bd);background:#fff}
 .role-card.expanded .rc-detail{display:block}
 .rcd-section{margin-bottom:6px}
-.rcd-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:3px}
+.rcd-label{font-size:8px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3a3a3a;margin-bottom:3px}
 .rcd-tags{display:flex;flex-wrap:wrap;gap:3px}
 .rcd-tag{font-size:8.5px;padding:2px 7px;border-radius:4px;border:1px solid var(--bd);background:var(--lgrey);color:var(--dk2)}
-.rcd-note{font-size:9px;color:var(--dk2);line-height:1.5;background:var(--lgrey);border-radius:4px;padding:5px 8px}
+.rcd-note{font-size:9px;color:#1a1a1a;line-height:1.5;background:var(--lgrey);border-radius:4px;padding:5px 8px}
 
 /* Destination sub-sections inside FIT */
 .dest-section{margin:0 -10px;border-top:1px solid var(--bd)}
@@ -203,7 +203,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 
 /* ── JD Tab ──────────────────────────────────────────────── */
 .jd-filter-bar{display:flex;align-items:center;gap:6px;flex-wrap:wrap;padding:8px 12px;background:#fff;border:1px solid var(--bd);border-radius:var(--r)}
-.jd-filter-label{font-size:9.5px;font-weight:600;color:var(--grey);white-space:nowrap}
+.jd-filter-label{font-size:9.5px;font-weight:600;color:#3a3a3a;white-space:nowrap}
 .jd-filters{display:flex;flex-wrap:wrap;gap:4px}
 .jd-filter-chip{font-size:9px;font-weight:600;padding:3px 10px;border-radius:99px;border:1px solid var(--bd2);background:#fff;color:var(--dk2);cursor:pointer;transition:all .15s;font-family:'Plus Jakarta Sans',sans-serif}
 .jd-filter-chip:hover{border-color:var(--blu);color:var(--blu)}
@@ -213,19 +213,19 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 .jd-row:hover{background:#F8FAFC}
 .jd-row.expanded{background:var(--f2-bg)}
 .jd-row:last-child{border-bottom:none;border-radius:0 0 var(--r) var(--r)}
-.jd-cell{padding:9px 14px;font-size:10.5px;color:var(--dk2);line-height:1.4;display:flex;align-items:flex-start}
+.jd-cell{padding:9px 14px;font-size:10.5px;color:#1a1a1a;line-height:1.4;display:flex;align-items:flex-start}
 .jd-cell-dept{font-weight:600;color:var(--navy);font-size:10px}
 .jd-cell-role{font-weight:700;color:var(--navy);font-size:10.5px}
-.jd-cell-rep{font-size:10px;color:var(--grey)}
-.jd-cell-desc{font-size:10px;color:var(--dk2);display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
-.jd-expand-icon{font-size:8px;color:var(--grey);flex-shrink:0;margin-top:2px;transition:transform .18s}
+.jd-cell-rep{font-size:10px;color:#3a3a3a}
+.jd-cell-desc{font-size:10px;color:#1a1a1a;display:flex;align-items:flex-start;justify-content:space-between;gap:8px}
+.jd-expand-icon{font-size:8px;color:#555;flex-shrink:0;margin-top:2px;transition:transform .18s}
 .jd-row.expanded .jd-expand-icon{transform:rotate(180deg);color:var(--blu)}
 .jd-detail{display:none;grid-column:1/-1;padding:10px 14px 14px;border-top:1px dashed var(--bd2);background:var(--f2-bg)}
 .jd-row.expanded .jd-detail{display:block}
 .jd-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
 .jd-detail-section{display:flex;flex-direction:column;gap:4px}
-.jd-detail-lbl{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:var(--grey);margin-bottom:2px}
-.jd-detail-body{font-size:10.5px;color:var(--dk2);line-height:1.6;background:#fff;border-radius:4px;padding:8px 10px;border:1px solid var(--bd)}
+.jd-detail-lbl{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.08em;color:#3a3a3a;margin-bottom:2px}
+.jd-detail-body{font-size:10.5px;color:#1a1a1a;line-height:1.6;background:#fff;border-radius:4px;padding:8px 10px;border:1px solid var(--bd)}
 .jd-tags{display:flex;flex-wrap:wrap;gap:4px}
 .jd-tag{font-size:9px;padding:2px 8px;border-radius:99px;background:var(--lgrey);border:1px solid var(--bd);color:var(--dk2)}
 .jd-dept-badge{display:inline-block;font-size:8.5px;font-weight:700;padding:2px 7px;border-radius:99px;margin-top:2px}
@@ -246,9 +246,9 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 .dot-amber{background:#F97316}
 .dot-yel{background:#EAB308}
 .dot-green{background:#22C55E}
-.todo-owner{font-size:9px;font-weight:600;color:var(--grey);letter-spacing:.04em}
-.todo-body{font-size:10px;color:var(--dk2);line-height:1.6}
-.todo-suggestion{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:4px;padding:8px 10px;font-size:9.5px;color:#1E40AF;line-height:1.6}
+.todo-owner{font-size:9px;font-weight:600;color:#3a3a3a;letter-spacing:.04em}
+.todo-body{font-size:10px;color:#1a1a1a;line-height:1.6}
+.todo-suggestion{background:#EFF6FF;border:1px solid #BFDBFE;border-radius:4px;padding:8px 10px;font-size:9.5px;color:#1a3a7a;line-height:1.6}
 .sug-label{font-size:8.5px;font-weight:700;text-transform:uppercase;letter-spacing:.06em;color:#3B82F6;margin-bottom:4px}
 .todo-status{font-size:8.5px;font-weight:700;padding:2px 8px;border-radius:99px;align-self:flex-start;margin-top:auto}
 .todo-open{background:#FEE2E2;color:#B91C1C;border:1px solid #FCA5A5}
@@ -256,6 +256,79 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 
 @media(max-width:1000px){.todo-grid{grid-template-columns:1fr 1fr}.jd-table-hdr,.jd-row{grid-template-columns:120px 160px 140px 1fr}}
 @media(max-width:700px){.todo-grid{grid-template-columns:1fr}.jd-table-hdr,.jd-row{grid-template-columns:1fr}}
+/* ── Processes tab ───────────────────────────────────────── */
+.proc-dept{margin-bottom:16px}
+.proc-dept-hdr{background:var(--navy);color:#fff;border-radius:var(--r) var(--r) 0 0;padding:10px 14px;display:flex;align-items:center;gap:10px}
+.proc-dept-icon{font-size:14px}
+.proc-dept-title{font-size:12px;font-weight:700}
+.proc-dept-sub{font-size:9.5px;color:rgba(255,255,255,.5);margin-left:auto}
+.proc-roles{background:#fff;border:1px solid var(--bd);border-top:none;border-radius:0 0 var(--r) var(--r);overflow:hidden}
+.proc-role{border-bottom:1px solid var(--bd);cursor:pointer;transition:background .12s}
+.proc-role:last-child{border-bottom:none}
+.proc-role:hover{background:#F8FAFC}
+.proc-role.open{background:var(--lgrey)}
+.proc-role-hdr{padding:9px 14px;display:flex;align-items:center;gap:10px}
+.proc-role-name{font-size:11px;font-weight:700;color:var(--navy);flex:1}
+.proc-role-tag{font-size:8.5px;padding:2px 8px;border-radius:99px;border:1px solid var(--bd2);color:#3a3a3a;background:#fff}
+.proc-chevron{font-size:8px;color:#555;transition:transform .18s}
+.proc-role.open .proc-chevron{transform:rotate(180deg);color:var(--blu)}
+.proc-steps{display:none;padding:12px 14px 14px;border-top:1px dashed var(--bd2)}
+.proc-role.open .proc-steps{display:block}
+.proc-flow{display:flex;flex-wrap:wrap;align-items:center;gap:4px;margin-bottom:12px}
+.proc-step{background:#fff;border:1.5px solid var(--bd);border-radius:6px;padding:7px 11px;font-size:10px;font-weight:600;color:var(--navy);display:flex;align-items:flex-start;flex-direction:column;gap:2px;min-width:120px;max-width:180px;position:relative}
+.proc-step-num{font-size:8px;font-weight:700;color:#3a3a3a;letter-spacing:.06em;text-transform:uppercase}
+.proc-step-title{font-size:10.5px;font-weight:700;color:var(--navy);line-height:1.2}
+.proc-step-sub{font-size:8.5px;color:#1a1a1a;line-height:1.3}
+.proc-step.ps-gate{border-color:var(--red);background:#FEF2F2}
+.proc-step.ps-gate .proc-step-title{color:#B91C1C}
+.proc-step.ps-warn{border-color:#EAB308;background:#FFF8E6}
+.proc-step.ps-warn .proc-step-title{color:#78350F}
+.proc-step.ps-done{border-color:var(--grn);background:#F0FFF4}
+.proc-step.ps-done .proc-step-title{color:#15803D}
+.proc-arrow{font-size:10px;color:var(--bd2);flex-shrink:0}
+.proc-notes{background:var(--lgrey);border:1px solid var(--bd);border-radius:4px;padding:8px 12px;font-size:10px;color:#1a1a1a;line-height:1.6}
+.proc-notes strong{color:var(--navy)}
+
+/* ── Policies tab ────────────────────────────────────────── */
+.pol-section{margin-bottom:14px}
+.pol-section-hdr{padding:9px 14px;border-radius:var(--r) var(--r) 0 0;font-size:11px;font-weight:700;display:flex;align-items:center;gap:8px;cursor:pointer;user-select:none}
+.pol-section-hdr:hover{filter:brightness(.97)}
+.pol-cards{display:grid;grid-template-columns:1fr 1fr 1fr;gap:6px;padding:8px;background:#fff;border:1px solid var(--bd);border-top:none;border-radius:0 0 var(--r) var(--r)}
+.pol-card{border:1px solid var(--bd);border-radius:6px;overflow:hidden;cursor:pointer;transition:box-shadow .15s}
+.pol-card:hover{box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.pol-card.open{box-shadow:0 2px 10px rgba(26,115,232,.12);border-color:var(--blu)}
+.pol-card-hdr{padding:8px 11px;display:flex;align-items:flex-start;gap:8px;justify-content:space-between}
+.pol-icon{font-size:13px;flex-shrink:0}
+.pol-name{font-size:10.5px;font-weight:700;line-height:1.3;flex:1}
+.pol-sev{font-size:8px;font-weight:700;padding:2px 6px;border-radius:99px;flex-shrink:0}
+.pol-sev.sev-hard{background:#FEE2E2;color:#B91C1C;border:1px solid #FCA5A5}
+.pol-sev.sev-warn{background:#FEF3C7;color:#78350F;border:1px solid #FCD34D}
+.pol-sev.sev-std{background:#EFF4FF;color:#1E40AF;border:1px solid #BFDBFE}
+.pol-body{display:none;padding:0 11px 11px;border-top:1px solid var(--bd);font-size:10px;color:#1a1a1a;line-height:1.6}
+.pol-card.open .pol-body{display:block}
+.pol-rule{margin-top:7px;padding:6px 8px;border-radius:4px;background:var(--lgrey);border-left:3px solid var(--bd2)}
+.pol-rule.pr-hard{background:#FEF2F2;border-left-color:var(--red)}
+.pol-rule.pr-warn{background:#FFFBEB;border-left-color:#EAB308}
+.pol-rule.pr-fin{background:#EFF4FF;border-left-color:var(--blu)}
+.pol-chevron{font-size:8px;color:#555;transition:transform .18s;flex-shrink:0}
+.pol-card.open .pol-chevron{transform:rotate(180deg);color:var(--blu)}
+
+/* ── B2B vs B2C tab ──────────────────────────────────────── */
+.b2b-section{margin-bottom:16px}
+.b2b-section-title{font-size:12px;font-weight:800;color:var(--navy);padding:8px 0 6px;border-bottom:2px solid var(--bd);margin-bottom:8px;display:flex;align-items:center;gap:8px}
+.b2b-grid{display:grid;grid-template-columns:200px 1fr 1fr;gap:0;border:1px solid var(--bd);border-radius:var(--r);overflow:hidden;background:#fff}
+.b2b-col-hdr{padding:8px 12px;font-size:10px;font-weight:700;letter-spacing:.04em;text-transform:uppercase}
+.b2b-col-hdr.b2b-aspect{background:var(--lgrey);color:#3a3a3a}
+.b2b-col-hdr.b2b-b2c{background:#EFF4FF;color:#1E40AF}
+.b2b-col-hdr.b2b-b2b{background:#F5F0FF;color:#4C1D95}
+.b2b-row{display:contents}
+.b2b-row > div{padding:9px 12px;border-top:1px solid var(--bd);font-size:10px;line-height:1.5}
+.b2b-aspect-cell{background:var(--lgrey);font-weight:700;color:#1a1a1a;font-size:10px}
+.b2b-b2c-cell{background:#FAFCFF;color:#1a1a1a}
+.b2b-b2b-cell{background:#FDFAFF;color:#1a1a1a}
+.b2b-diff{display:inline-block;font-size:8px;font-weight:700;padding:1px 5px;border-radius:3px;background:#FEF3C7;color:#78350F;border:1px solid #FCD34D;margin-left:5px;vertical-align:middle}
+.b2b-same{display:inline-block;font-size:8px;font-weight:700;padding:1px 5px;border-radius:3px;background:#F0FFF4;color:#15803D;border:1px solid #86EFAC;margin-left:5px;vertical-align:middle}
+@media(max-width:800px){.pol-cards{grid-template-columns:1fr 1fr}.b2b-grid{grid-template-columns:1fr}.b2b-col-hdr.b2b-aspect,.b2b-aspect-cell{display:none}}
 </style>
 </head>
 <body>
@@ -264,7 +337,10 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 <!-- ── HEADER ──────────────────────────────────────────────── -->
 <div class="hdr">
   <div class="hdr-logo">
-    <div class="hdr-logo-name">TripFactory</div>
+    <svg width="72" height="28" viewBox="0 0 72 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="22" font-family="'Plus Jakarta Sans',Arial,sans-serif" font-weight="800" font-size="24" fill="white" letter-spacing="-1">ORN</text>
+      <circle cx="67" cy="8" r="4.5" fill="#F97316"/>
+    </svg>
     <div class="hdr-logo-sub">Tour Operator</div>
   </div>
   <div class="hdr-centre">
@@ -277,10 +353,13 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 </div>
 
 <!-- ── TAB BAR ─────────────────────────────────────────────── -->
-<div class="tab-bar" style="background:var(--navy);border-bottom:1px solid rgba(255,255,255,.1)">
+<div class="tab-bar" style="background:#000;border-bottom:1px solid rgba(255,255,255,.1);flex-wrap:wrap">
   <button class="tab-btn active" onclick="switchTab('bs',this)">Business Structure</button>
-  <button class="tab-btn" onclick="switchTab('org',this)">Org Chart Structure</button>
-  <button class="tab-btn" onclick="switchTab('jd',this)">Job Roles &amp; Descriptions</button>
+  <button class="tab-btn" onclick="switchTab('org',this)">Org Chart</button>
+  <button class="tab-btn" onclick="switchTab('jd',this)">Job Roles</button>
+  <button class="tab-btn" onclick="switchTab('proc',this)">Processes</button>
+  <button class="tab-btn" onclick="switchTab('pol',this)">Policies</button>
+  <button class="tab-btn" onclick="switchTab('b2b',this)">B2B vs B2C</button>
   <button class="tab-btn" onclick="switchTab('todo',this)">To Define &amp; Confirm</button>
 </div>
 
@@ -308,7 +387,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
       <span class="box-tag" style="border-color:rgba(196,120,0,.35);color:rgba(255,214,128,.7)">Global + Localised</span>
     </div>
     <div class="box-horiz">
-      <div class="box-title">PEOPLE, LEGAL &amp; GOVERNANCE &nbsp;<span style="font-size:9.5px;font-weight:400;opacity:.7">(CPO)</span></div>
+      <div class="box-title">PEOPLE, LEGAL &amp; GOVERNANCE &nbsp;<span style="font-size:9.5px;font-weight:400;color:rgba(255,255,255,.8)">(CPO)</span></div>
       <div class="box-sub">HR &nbsp;·&nbsp; Training &nbsp;·&nbsp; Legal &nbsp;·&nbsp; Payroll &nbsp;·&nbsp; Compliance &nbsp;·&nbsp; Technology</div>
       <div class="box-note">Central horizontal function &nbsp;·&nbsp; Supports all business units</div>
     </div>
@@ -322,18 +401,18 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
   <div class="divider"><span>Three Vertical Business Units</span></div>
 
   <div class="row-3col">
-    <div class="bu-header" style="background:var(--navy)">
+    <div class="bu-header" style="background:#000">
       <div class="bu-title">GIT</div>
       <div class="bu-sub">Group Inclusive Tours</div>
       <div class="bu-head">Head: Director TBC</div>
     </div>
-    <div class="bu-header" style="background:var(--navy2)">
+    <div class="bu-header" style="background:#111">
       <div class="bu-title">GROUPS / MICE</div>
       <div class="bu-sub">Incentive · Conference · Event · Bespoke</div>
       <div class="bu-head">Head: Director TBC</div>
     </div>
     <div class="fit-wrapper">
-      <div class="bu-header" style="background:var(--navy3);border-radius:0">
+      <div class="bu-header" style="background:#1a1a1a;border-radius:0">
         <div class="bu-title">FIT TRAVEL</div>
         <div class="bu-sub">Custom · Tailor-Made · B2B Agent</div>
         <div class="bu-head">Head: Director TBC</div>
@@ -478,7 +557,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
   <div class="org-leadership">
     <div class="org-lead-card olc-ceo">
       <div class="lead-role">Global Chief Executive Officer</div>
-      <input class="lead-name-input" id="n-ceo" placeholder="Enter name…" oninput="save('n-ceo',this.value)">
+      <input class="lead-name-input" id="n-ceo" placeholder="Raj Kumar" oninput="save('n-ceo',this.value)">
       <div class="lead-title">Global CEO · TripFactory</div>
     </div>
     <div class="org-lead-card olc-cco">
@@ -507,7 +586,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🏨</div>
           <div class="odh-title" style="color:var(--navy)">GIT</div>
-          <div class="odh-sub">Group Inclusive Tours</div>
+          <div class="odh-sub" style="color:#3a3a3a">Group Inclusive Tours</div>
           <div class="odh-count" style="background:rgba(26,46,74,.12);color:var(--navy)">~50 staff</div>
         </div>
         <div class="odh-toggle open">▼</div>
@@ -557,7 +636,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🎯</div>
           <div class="odh-title" style="color:var(--navy2)">Groups / MICE</div>
-          <div class="odh-sub">Incentive · Conference · Events</div>
+          <div class="odh-sub" style="color:#3a3a3a">Incentive · Conference · Events</div>
           <div class="odh-count" style="background:rgba(23,66,110,.12);color:var(--navy2)">~50 staff</div>
         </div>
         <div class="odh-toggle open">▼</div>
@@ -596,7 +675,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🧳</div>
           <div class="odh-title" style="color:var(--navy3)">FIT Travel</div>
-          <div class="odh-sub">Custom · Tailor-Made · B2B Agent &nbsp;·&nbsp; By Destination: Asia · Domestic · Europe · Australia · CIS · RTW</div>
+          <div class="odh-sub" style="color:#3a3a3a">Custom · Tailor-Made · B2B Agent &nbsp;·&nbsp; By Destination: Asia · Domestic · Europe · Australia · CIS · RTW</div>
           <div class="odh-count" style="background:rgba(17,50,87,.12);color:var(--navy3)">~200 staff</div>
         </div>
         <div class="odh-toggle open">▼</div>
@@ -635,7 +714,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🎧</div>
           <div class="odh-title" style="color:var(--t-tx)">Customer Services</div>
-          <div class="odh-sub">Central &nbsp;·&nbsp; By destination: Asia · Domestic · Europe · Australia · CIS · RTW</div>
+          <div class="odh-sub" style="color:#3a3a3a">Central &nbsp;·&nbsp; By destination: Asia · Domestic · Europe · Australia · CIS · RTW</div>
           <div class="odh-count" style="background:rgba(8,90,64,.1);color:var(--t-tx)">~48 staff</div>
         </div>
         <div class="odh-toggle open">▼</div>
@@ -666,7 +745,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">✈️</div>
           <div class="odh-title" style="color:var(--o-tx)">Ticketing</div>
-          <div class="odh-sub">Central Function</div>
+          <div class="odh-sub" style="color:#3a3a3a">Central Function</div>
           <div class="odh-count" style="background:rgba(45,37,144,.1);color:var(--o-tx)">~32 staff</div>
         </div>
         <div class="odh-toggle open">▼</div>
@@ -697,7 +776,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🛂</div>
           <div class="odh-title" style="color:var(--v-tx)">Visa Department</div>
-          <div class="odh-sub">Outsourced to UDAN · Udaan India</div>
+          <div class="odh-sub" style="color:#3a3a3a">Outsourced to UDAN · Udaan India</div>
           <div class="odh-count" style="background:rgba(122,75,0,.1);color:var(--v-tx)">~12 staff</div>
         </div>
         <div class="odh-toggle open">▼</div>
@@ -723,7 +802,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">📣</div>
           <div class="odh-title" style="color:#0A3E96">Marketing</div>
-          <div class="odh-sub">Central + Localised offices per region</div>
+          <div class="odh-sub" style="color:#3a3a3a">Central + Localised offices per region</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -753,7 +832,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">₹</div>
           <div class="odh-title" style="color:var(--fin-tx)">Finance</div>
-          <div class="odh-sub">Central Function · Reporting to CEO</div>
+          <div class="odh-sub" style="color:#3a3a3a">Central Function · Reporting to CEO</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -772,7 +851,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🏆</div>
           <div class="odh-title" style="color:var(--cred-tx)">Credits</div>
-          <div class="odh-sub">Global &amp; Localised Function</div>
+          <div class="odh-sub" style="color:#3a3a3a">Global &amp; Localised Function</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -791,7 +870,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">✈️</div>
           <div class="odh-title" style="color:#0A3E96">Flights Series</div>
-          <div class="odh-sub">Central Function</div>
+          <div class="odh-sub" style="color:#3a3a3a">Central Function</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -810,7 +889,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">📦</div>
           <div class="odh-title" style="color:#4C1D95">Commercial Product</div>
-          <div class="odh-sub">CPO: Ajay Kawa</div>
+          <div class="odh-sub" style="color:#3a3a3a">CPO: Ajay Kawa</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -832,7 +911,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">👤</div>
           <div class="odh-title" style="color:#1E5A08">People, Legal &amp; Governance</div>
-          <div class="odh-sub">CPO: Alia Taub</div>
+          <div class="odh-sub" style="color:#3a3a3a">CPO: Alia Taub</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -851,7 +930,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">💻</div>
           <div class="odh-title" style="color:#6B21A8">Technology / Development</div>
-          <div class="odh-sub">Platform · Systems · Data</div>
+          <div class="odh-sub" style="color:#3a3a3a">Platform · Systems · Data</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -866,7 +945,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
         <div class="odh-left">
           <div class="odh-icon">🚌</div>
           <div class="odh-title" style="color:#1E5A08">Transport</div>
-          <div class="odh-sub">Central Function</div>
+          <div class="odh-sub" style="color:#3a3a3a">Central Function</div>
         </div>
         <div class="odh-toggle open">▼</div>
       </div>
@@ -906,7 +985,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
     <div>Department</div>
     <div>Role</div>
     <div>Reports To</div>
-    <div>Description <span style="font-weight:400;opacity:.6">— click row to expand</span></div>
+    <div>Description <span style="font-weight:400;color:#3a3a3a">— click row to expand</span></div>
   </div>
 
   <!-- Rows injected by JS -->
@@ -928,11 +1007,11 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
   <div class="todo-section-hdr todo-p1">🔴 Priority 1 — Needed before recruitment can begin</div>
   <div class="todo-grid">
 
-    <div class="todo-card">
-      <div class="todo-card-hdr"><span class="todo-dot dot-red"></span>Global CEO Name</div>
-      <div class="todo-owner">Owner: Board / Shareholders</div>
-      <div class="todo-body">The Global CEO position is currently unfilled in the system. Name and start date required to confirm the full leadership chain.</div>
-      <div class="todo-status todo-open">Open</div>
+    <div class="todo-card todo-card-done">
+      <div class="todo-card-hdr"><span class="todo-dot dot-green"></span>Global CEO — Raj Kumar</div>
+      <div class="todo-owner">Owner: Confirmed</div>
+      <div class="todo-body">Raj Kumar confirmed as Global CEO. Leadership chain now complete at the top.</div>
+      <div class="todo-status todo-done">Confirmed</div>
     </div>
 
     <div class="todo-card">
@@ -958,7 +1037,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 
     <div class="todo-card">
       <div class="todo-card-hdr"><span class="todo-dot dot-red"></span>Finance Director &amp; Structure</div>
-      <div class="todo-owner">Owner: Global CEO / CEO India</div>
+      <div class="todo-owner">Owner: Raj Kumar (Global CEO) + Lalitha Krishna (CEO India)</div>
       <div class="todo-body">Finance Director TBC. Full structure TBC. Needed to confirm: payment gate ownership, LERMS admin, TCS compliance lead, AP/AR split, and reporting lines.</div>
       <div class="todo-suggestion">
         <div class="sug-label">💡 Suggested structure (indicative only)</div>
@@ -1040,7 +1119,28 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
     </div>
 
     <div class="todo-card">
-      <div class="todo-card-hdr"><span class="todo-dot dot-amber"></span>Visa — Internal vs. Outsourced Decision per BU</div>
+      <div class="todo-card-hdr"><span class="todo-dot dot-amber"></span>EPP — How does it affect the structure?</div>
+      <div class="todo-owner">Owner: Raj Kumar (Global CEO) + Ajay Kawa (CCO) + Alia Taub (CPO)</div>
+      <div class="todo-body">The Employee Purchase Programme (EPP) needs to be assessed across the full org structure. Key questions to discuss: Does EPP create a separate sales/booking channel? Does it affect pricing policy and discounting rules? Which departments administer it? How are EPP bookings tracked in LERMS vs. commercial bookings? Does EPP interact with the Credits function? Are there compliance or legal implications for subsidised travel?</div>
+      <div class="todo-suggestion">
+        <div class="sug-label">💡 Discussion points (to confirm)</div>
+        1. Who owns EPP administration — HR/CPO or Finance? &nbsp;·&nbsp; 2. Is EPP a separate booking channel or routed through standard BU sales? &nbsp;·&nbsp; 3. Does EPP require its own policy gate structure? &nbsp;·&nbsp; 4. How does EPP interact with B2B agent pricing and net rates? &nbsp;·&nbsp; 5. Volume and eligibility criteria to be defined.
+      </div>
+      <div class="todo-status todo-open">Open — discuss</div>
+    </div>
+
+    <div class="todo-card">
+      <div class="todo-card-hdr"><span class="todo-dot dot-amber"></span>Transport Management — how is it run?</div>
+      <div class="todo-owner">Owner: Raj Kumar (Global CEO) + Transport Director (TBC)</div>
+      <div class="todo-body">Transport is listed as a central function with a TBC Director but no structure defined. A dedicated discussion is needed to confirm: Is transport fully in-house, fully outsourced, or a hybrid? How does the coach contracting model work across destinations? Who manages driver relationships, float and LERMS transport entries day-to-day? How does transport interact with GIT (group coaches), MICE (event transfers) and FIT (private transfers)?</div>
+      <div class="todo-suggestion">
+        <div class="sug-label">💡 Discussion points (to confirm)</div>
+        1. In-house drivers vs. contracted fleet vs. per-trip outsource &nbsp;·&nbsp; 2. Transport SLA per BU (GIT needs full coach, FIT needs private transfer, MICE needs event shuttles) &nbsp;·&nbsp; 3. Driver float process — who authorises, tracks, settles? &nbsp;·&nbsp; 4. Does Transport Director report to Global CEO or CCO? &nbsp;·&nbsp; 5. Is there a technology requirement (GPS tracking, driver app)?
+      </div>
+      <div class="todo-status todo-open">Open — discuss</div>
+    </div>
+
+
       <div class="todo-owner">Owner: CCO + BU Directors</div>
       <div class="todo-body">UDAN (Udaan India) confirmed for all BUs currently. Decision needed on whether each BU retains outsourced model long-term or brings visa processing in-house as volume grows. GIT and MICE may have different requirements to FIT.</div>
       <div class="todo-status todo-open">Open</div>
@@ -1054,7 +1154,7 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 
     <div class="todo-card">
       <div class="todo-card-hdr"><span class="todo-dot dot-yel"></span>Customer Services — Central vs. BU model</div>
-      <div class="todo-owner">Owner: CCO + Global CEO</div>
+      <div class="todo-owner">Owner: Raj Kumar (Global CEO) + Ajay Kawa (CCO)</div>
       <div class="todo-body">Currently planned as central with 6 destination-aligned teams. Decision pending on whether Groups/MICE customer service sits separately given different SLA requirements for event clients vs. leisure travellers.</div>
       <div class="todo-status todo-open">Open</div>
     </div>
@@ -1143,6 +1243,39 @@ body{background:#0D1B2A;min-height:100vh;padding:24px 20px 48px;color:var(--navy
 
 </div><!-- /tab-todo -->
 
+<!-- ══ TAB: PROCESSES ══════════════════════════════════════ -->
+<div id="tab-proc" class="tab-panel">
+
+<div class="notice-bar notice-amber">
+  <span>📋</span>
+  <span><strong>For review.</strong> All processes shown are draft and indicative. Each process should be reviewed and confirmed by the relevant Department Director and the CCO before being used for training or operations.</span>
+</div>
+
+<div id="procContainer"></div>
+</div>
+
+<!-- ══ TAB: POLICIES ══════════════════════════════════════ -->
+<div id="tab-pol" class="tab-panel">
+
+<div class="notice-bar notice-blue">
+  <span>🔒</span>
+  <span><strong>Policies for review.</strong> These policies are designed to protect bookings, finance, data and customers across all departments. Each policy must be formally approved by the relevant Director and the CPO/CCO before implementation.</span>
+</div>
+
+<div id="polContainer"></div>
+</div>
+
+<!-- ══ TAB: B2B vs B2C ════════════════════════════════════ -->
+<div id="tab-b2b" class="tab-panel">
+
+<div class="notice-bar" style="background:#F5F0FF;border:1px solid #6B46C1;color:#4C1D95">
+  <span>🔀</span>
+  <span><strong>B2B vs B2C channel differences.</strong> This tab shows where processes, policies and department interactions differ depending on whether TripFactory is dealing with a trade agent (B2B) or a direct customer (B2C). Where there is no difference, the standard process applies to both.</span>
+</div>
+
+<div id="b2bContainer"></div>
+</div>
+
 </div><!-- /page -->
 
 <div class="footer">
@@ -1211,7 +1344,7 @@ function filterJD(dept, btn) {
 // ── JD Data ───────────────────────────────────────────────
 const JD = [
   // Leadership
-  { dept:'Leadership', role:'Global CEO', reports:'Board / Shareholders', badge:'#1A2E4A', badgeTx:'#fff',
+  { dept:'Leadership', role:'Global CEO', reports:'Raj Kumar — Global CEO (founder)', badge:'#1A2E4A', badgeTx:'#fff',
     summary:'Responsible for the global strategic direction of TripFactory.',
     responsibilities:'Sets global strategy and vision · Owns P&L at group level · Leads the senior leadership team · Represents TripFactory to investors, partners and key markets · Final authority on all major commercial, people and operational decisions',
     skills:'Strategic leadership · P&L management · Travel industry expertise · Stakeholder management · International business',
@@ -1488,7 +1621,7 @@ function buildJD() {
         <div style="margin-top:8px;display:flex;align-items:center;gap:8px">
           <span class="jd-detail-lbl" style="margin-bottom:0">Indicative headcount:</span>
           <span class="jd-tag">${row.headcount}</span>
-          <span style="font-size:8.5px;color:var(--grey);font-style:italic">Subject to reconfirmation by Director + CCO/CEO</span>
+          <span style="font-size:8.5px;color:#3a3a3a;font-style:italic">Subject to reconfirmation by Director + CCO/CEO</span>
         </div>
       </div>`;
     r.onclick = function() {
@@ -1500,7 +1633,376 @@ function buildJD() {
 
   container.appendChild(wrap);
 }
-buildJD();
+
+// ══════════════════════════════════════════════════════════
+// PROCESSES DATA & RENDER
+// ══════════════════════════════════════════════════════════
+const PROC_DATA = [
+  { dept:'Sales (All BUs)', icon:'🗣️', color:'#1A2E4A', roles:[
+    { name:'Sales Expert — Booking Process', tag:'End-to-end', steps:[
+      {n:1,t:'Enquiry Received',s:'Call · WhatsApp · Walk-in · Agent referral',cls:''},
+      {n:2,t:'Ground Reality Disclosure',s:'14 items · customer signs before any payment',cls:'ps-gate'},
+      {n:3,t:'Package & Pricing Locked',s:'Departure · version · inclusions in writing',cls:''},
+      {n:4,t:'GATE A — Disclosure Gate',s:'No payment until signed. Hard stop.',cls:'ps-gate'},
+      {n:5,t:'Deposit Collected',s:'Booking Owner assigned · file opened',cls:''},
+      {n:6,t:'12 Mandatory Fields',s:'Passport · PAN · DOB · rooming · dietary · emergency',cls:'ps-gate'},
+      {n:7,t:'GATE B — Booking Complete',s:'All fields confirmed. No TBDs.',cls:'ps-gate'},
+      {n:8,t:'Visa Feasibility Check',s:'Europe: mandatory before proceeding',cls:'ps-warn'},
+      {n:9,t:'Parallel Processing',s:'Visa · Finance gates · Flight sealing',cls:''},
+      {n:10,t:'Balance Collection',s:'Track all 6 payment gates',cls:'ps-warn'},
+      {n:11,t:'Handover File',s:'18-item file · Sales-to-Ops · GATE G',cls:'ps-gate'},
+      {n:12,t:'Departure',s:'File accepted · zero dues · TM briefed',cls:'ps-done'},
+    ], notes:'<strong>Key rule:</strong> Payment does not equal confirmation. All 12 mandatory fields must be complete. The Booking Owner is personally accountable for every gate from A to G.' },
+    { name:'Sales Team Leader — Daily Process', tag:'Management', steps:[
+      {n:1,t:'Morning Pipeline Review',s:'Review open files · identify blockers',cls:''},
+      {n:2,t:'Gate Compliance Check',s:'Flag any overdue gates in team',cls:'ps-warn'},
+      {n:3,t:'Coaching & Support',s:'Support Experts on complex enquiries',cls:''},
+      {n:4,t:'Escalation Triage',s:'L1 escalations reviewed within 2 hours',cls:''},
+      {n:5,t:'Weekly Ops Review',s:'Attend with Director · report team KPIs',cls:''},
+      {n:6,t:'Scorecard Update',s:'Log errors and gate violations weekly',cls:'ps-warn'},
+    ], notes:'Team Leader is responsible for their team\'s compliance, not individual bookings. Their KPI is team error rate and conversion.' },
+  ]},
+  { dept:'Operations', icon:'⚙️', color:'#17426E', roles:[
+    { name:'Ops Team Leader — Tour Cycle', tag:'Full cycle', steps:[
+      {n:1,t:'Handover File Received',s:'Review all 18 items — reject if incomplete',cls:'ps-gate'},
+      {n:2,t:'Service Block Confirmation',s:'Hotels · guides · coaches confirmed T-21',cls:'ps-warn'},
+      {n:3,t:'Group Strength Review',s:'Proceed / Hold / Merge / Cancel decision',cls:'ps-warn'},
+      {n:4,t:'GATE F — Freeze Gate',s:'No changes after freeze without written approval',cls:'ps-gate'},
+      {n:5,t:'Voucher Release',s:'Only after GATE E zero-dues confirmed',cls:'ps-gate'},
+      {n:6,t:'TM Briefing',s:'Full pack: pax list · meals · flights · hotels · float',cls:''},
+      {n:7,t:'Driver Float',s:'LERMS entry · driver signs receipt before departure',cls:'ps-gate'},
+      {n:8,t:'Departure',s:'Tour Manager takes responsibility from this point',cls:'ps-done'},
+      {n:9,t:'Post-Tour Settlement',s:'Driver submits expenses ≤48hrs · receipts required',cls:''},
+      {n:10,t:'LERMS Close',s:'All entries reconciled · Finance sign-off',cls:'ps-done'},
+    ], notes:'<strong>Critical:</strong> Ops may reject any incomplete handover file. Accountability does not transfer to Ops until the file is formally accepted.' },
+  ]},
+  { dept:'Finance', icon:'₹', color:'#2563EB', roles:[
+    { name:'Finance Executive — Payment Gate Process', tag:'6 gates', steps:[
+      {n:1,t:'Gate 1: Booking Gate',s:'Deposit received · file approved to open',cls:'ps-gate'},
+      {n:2,t:'Gate 2: Visa Gate',s:'Visa fee collected · processing authorised',cls:'ps-gate'},
+      {n:3,t:'Gate 3: Flight Gate',s:'Ticketing deposit cleared · PNR sealing approved',cls:'ps-gate'},
+      {n:4,t:'Gate 4: Supplier Gate',s:'Supplier payments authorised · no commitments before this',cls:'ps-gate'},
+      {n:5,t:'Gate 5: Final Gate',s:'100% package + TCS + supplements = zero dues',cls:'ps-gate'},
+      {n:6,t:'Gate 6: Tour Gate',s:'Vouchers released · driver float issued',cls:'ps-done'},
+    ], notes:'<strong>Rule §06:</strong> No company action before the relevant payment gate clears. Finance Manager must authorise any exception in writing. B2B exceptions require credit agreement on file and Finance Manager confirmation.' },
+    { name:'Finance — LERMS & Driver Float', tag:'Post-tour', steps:[
+      {n:1,t:'Float Request',s:'Ops Controller submits · Finance Manager approves if above threshold',cls:''},
+      {n:2,t:'Float Issued',s:'Driver signs receipt · LERMS entry created',cls:'ps-gate'},
+      {n:3,t:'Tour Departs',s:'Float active · driver manages approved expenses',cls:''},
+      {n:4,t:'Tour Returns',s:'Driver submits invoice + receipts ≤48hrs',cls:'ps-warn'},
+      {n:5,t:'Expense Review',s:'Finance verifies: parking · tolls · fuel · pre-approved only',cls:''},
+      {n:6,t:'Settlement',s:'Over-float >10% → Finance Manager sign-off required',cls:'ps-warn'},
+      {n:7,t:'LERMS Closed',s:'Entry marked Settled · audit trail complete',cls:'ps-done'},
+    ], notes:'No receipt = line rejected. No exceptions. LERMS must be updated within 5 working days of tour return.' },
+  ]},
+  { dept:'Visa', icon:'🛂', color:'#C47800', roles:[
+    { name:'Visa Officer — 8-Stage Process', tag:'All BUs', steps:[
+      {n:1,t:'1. Not Started',s:'Booking confirmed · visa flag raised',cls:''},
+      {n:2,t:'2. Docs Pending',s:'Checklist sent to Booking Owner',cls:''},
+      {n:3,t:'3. Docs Received',s:'All docs verified by Visa Officer',cls:''},
+      {n:4,t:'4. Appt Booked',s:'Embassy appointment scheduled',cls:''},
+      {n:5,t:'5. Biometrics',s:'Applicant attends biometrics',cls:''},
+      {n:6,t:'6. Submitted',s:'Application at embassy',cls:''},
+      {n:7,t:'7. Decision',s:'Visa Granted ✓ or Rejected ✗',cls:'ps-warn'},
+      {n:8,t:'8. Delivered',s:'Passport returned to Booking Owner',cls:'ps-done'},
+    ], notes:'<strong>T-45 rule:</strong> If passport is not in hand by T-45, escalate immediately to Visa Team Leader and Ops Manager. Europe: visa feasibility must be confirmed at Step 1 of the booking process — not after deposit.' },
+  ]},
+  { dept:'Ticketing', icon:'✈️', color:'#4F46CC', roles:[
+    { name:'Ticketing Agent — PNR Process', tag:'Standard', steps:[
+      {n:1,t:'Booking Received',s:'Booking Owner sends pax names + dates',cls:''},
+      {n:2,t:'Name Verification',s:'Name must match passport exactly',cls:'ps-gate'},
+      {n:3,t:'GDS Availability',s:'Check fare class · routing · group block availability',cls:''},
+      {n:4,t:'Ticketing Deposit Check',s:'Finance confirms Gate 3 cleared before sealing',cls:'ps-gate'},
+      {n:5,t:'PNR Created',s:'Booking confirmed in GDS',cls:''},
+      {n:6,t:'Flight Sealed',s:'Non-refundable commitment made',cls:'ps-gate'},
+      {n:7,t:'Confirmation to Ops',s:'PNR details sent to Ops and Booking Owner',cls:'ps-done'},
+    ], notes:'<strong>T-30 rule:</strong> If flight is not sealed by T-30, escalate to Ticketing Team Leader and Ops Manager. Name amendments after sealing may incur charges — Booking Owner is accountable.' },
+  ]},
+  { dept:'Customer Services', icon:'🎧', color:'#138A62', roles:[
+    { name:'Customer Service Agent — Query Process', tag:'Post-sale', steps:[
+      {n:1,t:'Query Received',s:'Phone · email · chat · WhatsApp',cls:''},
+      {n:2,t:'CRM Log',s:'Log query type · booking ref · customer',cls:''},
+      {n:3,t:'Identify Category',s:'Info query / change request / complaint',cls:''},
+      {n:4,t:'Resolve or Escalate',s:'Agent resolves within authority · else escalate',cls:''},
+      {n:5,t:'L1 Escalation',s:'To SME or Supervisor · 2hr SLA',cls:'ps-warn'},
+      {n:6,t:'L2 Escalation',s:'To CS Team Leader · complex or complaint',cls:'ps-warn'},
+      {n:7,t:'Resolution',s:'Customer notified · CRM updated · case closed',cls:'ps-done'},
+    ], notes:'All complaints must be logged in CRM regardless of outcome. No verbal promises on refunds or changes without supervisor approval.' },
+  ]},
+  { dept:'Marketing', icon:'📣', color:'#1A73E8', roles:[
+    { name:'Marketing Manager — Campaign Process', tag:'Per destination', steps:[
+      {n:1,t:'Brief Received',s:'BU Director or Marketing Director sets brief',cls:''},
+      {n:2,t:'Creative Brief',s:'Marketing Manager briefs Creative Team',cls:''},
+      {n:3,t:'Content Production',s:'Creative × 2 + Social Media × 1 produce assets',cls:''},
+      {n:4,t:'Approval',s:'Marketing Director approves before publication',cls:'ps-gate'},
+      {n:5,t:'Pricing Sign-off',s:'Any pricing in marketing materials — CCO must approve',cls:'ps-gate'},
+      {n:6,t:'Publish & Distribute',s:'Digital · social · print · agent comms',cls:''},
+      {n:7,t:'Performance Review',s:'CPL · engagement · lead quality reported weekly',cls:'ps-done'},
+    ], notes:'<strong>Critical:</strong> No pricing can be published in any marketing material without CCO sign-off. Incorrect pricing in market creates liability.' },
+  ]},
+];
+
+function buildProc() {
+  const c = document.getElementById('procContainer');
+  PROC_DATA.forEach(dept => {
+    const d = document.createElement('div');
+    d.className = 'proc-dept';
+    d.innerHTML = `<div class="proc-dept-hdr" style="background:${dept.color}">
+      <span class="proc-dept-icon">${dept.icon}</span>
+      <span class="proc-dept-title">${dept.dept}</span>
+      <span class="proc-dept-sub">${dept.roles.length} process${dept.roles.length>1?'es':''}</span>
+    </div><div class="proc-roles"></div>`;
+    const rolesEl = d.querySelector('.proc-roles');
+    dept.roles.forEach(role => {
+      const r = document.createElement('div');
+      r.className = 'proc-role';
+      const steps = role.steps.map((s,i) =>
+        `${i>0?'<span class="proc-arrow">→</span>':''}<div class="proc-step ${s.cls||''}"><span class="proc-step-num">Step ${s.n}</span><span class="proc-step-title">${s.t}</span><span class="proc-step-sub">${s.s}</span></div>`
+      ).join('');
+      r.innerHTML = `<div class="proc-role-hdr" onclick="this.closest('.proc-role').classList.toggle('open')">
+        <span class="proc-role-name">${role.name}</span>
+        <span class="proc-role-tag">${role.tag}</span>
+        <span class="proc-chevron">▼</span>
+      </div>
+      <div class="proc-steps">
+        <div class="proc-flow">${steps}</div>
+        <div class="proc-notes">${role.notes}</div>
+      </div>`;
+      rolesEl.appendChild(r);
+    });
+    c.appendChild(d);
+  });
+}
+buildProc();
+
+// ══════════════════════════════════════════════════════════
+// POLICIES DATA & RENDER
+// ══════════════════════════════════════════════════════════
+const POL_DATA = [
+  { section:'Booking Protection Policies', color:'#FEE2E2', hdrTx:'#7F1D1D', border:'#FCA5A5', icon:'📋', policies:[
+    { icon:'🔒', name:'Disclosure Before Deposit', sev:'hard', sevTx:'HARD STOP',
+      body:'No deposit may be collected before the customer (or agent) has signed the 14-item Ground Reality Disclosure. This policy applies to all booking types — GIT, MICE, FIT, B2B.',
+      rules:[
+        {txt:'Verbal disclosure is not sufficient. Written acknowledgement required.', cls:'pr-hard'},
+        {txt:'B2B agents are contractually responsible for passing disclosure to end customer.', cls:'pr-warn'},
+        {txt:'If disclosure is skipped: booking is invalid regardless of payment status.', cls:'pr-hard'},
+      ]},
+    { icon:'📝', name:'Mandatory Fields Policy', sev:'hard', sevTx:'HARD STOP',
+      body:'All 12 mandatory fields must be complete before a booking is confirmed. Any TBD or blank field makes the booking Incomplete. Payment does not override this.',
+      rules:[
+        {txt:'2 or more TBD fields = Incomplete status. No company action until resolved.', cls:'pr-hard'},
+        {txt:'Name must match passport exactly — including middle names and special characters.', cls:'pr-hard'},
+        {txt:'Booking Owner is accountable for data completeness.', cls:'pr-warn'},
+      ]},
+    { icon:'✍️', name:'Booking Owner Policy', sev:'std', sevTx:'REQUIRED',
+      body:'Every booking must have one named Booking Owner who is accountable from booking to departure. No booking may be transferred without a formal hand-off note.',
+      rules:[
+        {txt:'One named Booking Owner per file — no exceptions.', cls:'pr-hard'},
+        {txt:'Transfer requires written hand-off note with acknowledgement from receiving BO.', cls:'pr-warn'},
+        {txt:'BO is accountable for all 7 policy gates A through G.', cls:'pr-warn'},
+      ]},
+    { icon:'🗣️', name:'Verbal Inclusion Policy', sev:'hard', sevTx:'ZERO TOLERANCE',
+      body:'No verbal promise of an inclusion, upgrade, discount or special service may be made. Everything must be documented in writing on the booking file.',
+      rules:[
+        {txt:'Verbal inclusion = zero-tolerance §26 violation.', cls:'pr-hard'},
+        {txt:'Special requests must be approved in writing by the relevant supplier before being communicated to the customer.', cls:'pr-hard'},
+      ]},
+  ]},
+  { section:'Finance & Payment Policies', color:'#EFF4FF', hdrTx:'#1E3A8A', border:'#BFDBFE', icon:'₹', policies:[
+    { icon:'💳', name:'6-Gate Payment Policy', sev:'hard', sevTx:'HARD STOP',
+      body:'No company action (supplier payment, service confirmation, flight sealing, voucher release) may occur before the relevant payment gate has cleared. Finance Manager must authorise any exception in writing.',
+      rules:[
+        {txt:'Gate 4 (Supplier): no hotel blocks, coach contracts or guide fees before this gate clears.', cls:'pr-hard'},
+        {txt:'Gate 5 (Final): 100% package + TCS + all supplements. Zero dues = zero exceptions.', cls:'pr-hard'},
+        {txt:'Gate 6 (Tour): vouchers only release after zero dues confirmed. §26 violation if released early.', cls:'pr-hard'},
+        {txt:'B2B exception: requires signed credit agreement AND Finance Manager written confirmation.', cls:'pr-fin'},
+      ]},
+    { icon:'📊', name:'TCS Compliance Policy', sev:'std', sevTx:'REQUIRED',
+      body:'Tax Collected at Source (TCS) must be calculated, collected and filed correctly on all eligible bookings. Finance is responsible for TCS compliance across all business units.',
+      rules:[
+        {txt:'TCS applies to international tour packages above threshold — Finance must confirm rates per booking.', cls:'pr-fin'},
+        {txt:'TCS must be collected before issuing any tour documentation.', cls:'pr-hard'},
+        {txt:'TCS filings must be completed on schedule — Finance Director accountable.', cls:'pr-fin'},
+      ]},
+    { icon:'🚌', name:'Driver Float Policy', sev:'std', sevTx:'REQUIRED',
+      body:'All driver float requests must go through LERMS. Driver signs receipt before departure. Expense settlement within 48 hours of tour return. No receipt = line rejected.',
+      rules:[
+        {txt:'Float above standard threshold requires Finance Manager approval before issue.', cls:'pr-warn'},
+        {txt:'Only approved categories: parking, tolls above cap, fuel, pre-approved repairs, ferry/tunnel.', cls:'pr-warn'},
+        {txt:'Over-float >10% requires Finance Manager sign-off. No exceptions.', cls:'pr-hard'},
+      ]},
+    { icon:'🤝', name:'B2B Credit Terms Policy', sev:'warn', sevTx:'WARNING',
+      body:'B2B agents may be granted credit terms subject to a signed credit agreement confirmed by the Finance Manager. Credit is not automatic and must be reviewed periodically.',
+      rules:[
+        {txt:'No credit extended without signed agreement on file.', cls:'pr-hard'},
+        {txt:'Credit limit review required annually or on volume change.', cls:'pr-warn'},
+        {txt:'Outstanding dues beyond credit period trigger immediate escalation to CCO.', cls:'pr-warn'},
+      ]},
+  ]},
+  { section:'Data & Customer Protection Policies', color:'#DCFCE7', hdrTx:'#14532D', border:'#86EFAC', icon:'🔐', policies:[
+    { icon:'🛂', name:'Passport & Personal Data Policy', sev:'std', sevTx:'REQUIRED',
+      body:'All personal data collected from customers (passport, PAN, DOB, medical) must be handled securely, used only for booking purposes, and stored per data protection requirements.',
+      rules:[
+        {txt:'Passport data collected only as required for bookings — not retained beyond tour completion without consent.', cls:'pr-fin'},
+        {txt:'No personal data shared with third parties beyond operational need (visa, hotel, airline).', cls:'pr-hard'},
+        {txt:'Data breaches must be escalated to CPO within 24 hours.', cls:'pr-hard'},
+      ]},
+    { icon:'💬', name:'Customer Communication Policy', sev:'std', sevTx:'REQUIRED',
+      body:'All material communications with customers regarding bookings, pricing, inclusions and changes must be in writing. WhatsApp and email are acceptable. Verbal-only communications are not.',
+      rules:[
+        {txt:'Pricing changes communicated in writing within 4 hours of identification.', cls:'pr-warn'},
+        {txt:'Cancellation or change notifications must state reasons and options clearly.', cls:'pr-warn'},
+        {txt:'No promises on refund timelines without Finance sign-off.', cls:'pr-hard'},
+      ]},
+    { icon:'⭐', name:'Complaint Handling Policy', sev:'std', sevTx:'REQUIRED',
+      body:'All complaints must be logged in CRM regardless of outcome. Level 1 must respond within 2 hours. Financial resolution requires Finance Manager approval.',
+      rules:[
+        {txt:'L1 (Agent): respond within 2 hours. L2 (Manager): within 4 hours. L3 (Head): same day.', cls:'pr-warn'},
+        {txt:'No financial promises (refunds, credits) without Finance Manager written approval.', cls:'pr-hard'},
+        {txt:'Pattern complaints (3+ for same booking type/destination) must be escalated to CCO.', cls:'pr-warn'},
+      ]},
+  ]},
+  { section:'Operations & Handover Policies', color:'#FFF3DC', hdrTx:'#7A4B00', border:'#FCD34D', icon:'⚙️', policies:[
+    { icon:'📁', name:'18-Item Handover File Policy', sev:'hard', sevTx:'HARD STOP',
+      body:'Every file passed from Sales to Operations must contain all 18 required items. Ops may reject any incomplete file. Accountability does not transfer until formal acceptance.',
+      rules:[
+        {txt:'Missing any of 18 items = file rejected. Booking Owner accountable until accepted.', cls:'pr-hard'},
+        {txt:'No TBDs permitted in rooming, meals, or emergency contact at handover.', cls:'pr-hard'},
+        {txt:'Special requests must have written supplier approval attached.', cls:'pr-warn'},
+      ]},
+    { icon:'❄️', name:'Departure Freeze Policy', sev:'warn', sevTx:'WARNING',
+      body:'Once a departure is frozen, no new bookings, amendments or supplier changes may be made without written Ops Manager approval. Freeze date is set by Ops, not Sales.',
+      rules:[
+        {txt:'Post-freeze booking changes require Ops Manager written approval — no exceptions.', cls:'pr-hard'},
+        {txt:'Cancellation after freeze: standard cancellation charges apply immediately.', cls:'pr-warn'},
+        {txt:'Merge/cancel decisions require management sign-off at Director level.', cls:'pr-warn'},
+      ]},
+    { icon:'🎫', name:'Voucher Release Policy', sev:'hard', sevTx:'ZERO TOLERANCE',
+      body:'Vouchers must never be released while any outstanding dues remain. Gate E (zero dues) must be confirmed by Finance before Ops releases any voucher. §26 violation.',
+      rules:[
+        {txt:'Zero dues confirmed by Finance = prerequisite for any voucher release.', cls:'pr-hard'},
+        {txt:'Vouchers with outstanding dues = §26 violation + Booking Owner scorecard entry.', cls:'pr-hard'},
+        {txt:'B2B exception requires Finance Manager written confirmation of credit coverage.', cls:'pr-fin'},
+      ]},
+  ]},
+  { section:'People & HR Policies', color:'#F0FFF4', hdrTx:'#14532D', border:'#86EFAC', icon:'👤', policies:[
+    { icon:'📈', name:'Booking Owner Scorecard Policy', sev:'std', sevTx:'REQUIRED',
+      body:'Every Booking Owner, FIT Consultant and B2B Account Manager is assessed on a seasonal scorecard covering errors, gate violations, complaints and escalations. Persistent violations trigger a managed performance review.',
+      rules:[
+        {txt:'Scorecard reviewed quarterly by Ops Manager and HR.', cls:'pr-fin'},
+        {txt:'3+ gate violations in a quarter = mandatory coaching session.', cls:'pr-warn'},
+        {txt:'Persistent violations (2 quarters) = formal managed performance process.', cls:'pr-hard'},
+      ]},
+    { icon:'🎓', name:'Training Certification Policy', sev:'std', sevTx:'REQUIRED',
+      body:'All Booking Owners, Experts and Trainees must hold current TripFactory policy certification before handling bookings independently. Certification must be renewed annually.',
+      rules:[
+        {txt:'Trainee must achieve policy certification within 6 months of start date.', cls:'pr-warn'},
+        {txt:'Annual recertification required for all customer-facing roles.', cls:'pr-fin'},
+        {txt:'No independent booking handling without current certification on file.', cls:'pr-hard'},
+      ]},
+  ]},
+];
+
+function buildPol() {
+  const c = document.getElementById('polContainer');
+  POL_DATA.forEach(sec => {
+    const s = document.createElement('div');
+    s.className = 'pol-section';
+    s.innerHTML = `<div class="pol-section-hdr" style="background:${sec.color};color:${sec.hdrTx};border:1px solid ${sec.border};border-bottom:none" onclick="this.nextElementSibling.style.display=this.nextElementSibling.style.display==='none'?'':'none'">
+      <span>${sec.icon}</span><span>${sec.section}</span><span style="margin-left:auto;font-size:9px;color:rgba(255,255,255,.7)">${sec.policies.length} policies</span>
+    </div>
+    <div class="pol-cards"></div>`;
+    const grid = s.querySelector('.pol-cards');
+    sec.policies.forEach(pol => {
+      const card = document.createElement('div');
+      card.className = 'pol-card';
+      const rules = pol.rules.map(r=>`<div class="pol-rule ${r.cls}">${r.txt}</div>`).join('');
+      card.innerHTML = `<div class="pol-card-hdr" onclick="this.closest('.pol-card').classList.toggle('open')">
+        <span class="pol-icon">${pol.icon}</span>
+        <span class="pol-name">${pol.name}</span>
+        <span class="pol-sev ${pol.sev==='hard'?'sev-hard':pol.sev==='warn'?'sev-warn':'sev-std'}">${pol.sevTx}</span>
+        <span class="pol-chevron">▼</span>
+      </div>
+      <div class="pol-body"><p style="margin-bottom:6px">${pol.body}</p>${rules}</div>`;
+      grid.appendChild(card);
+    });
+    c.appendChild(s);
+  });
+}
+buildPol();
+
+// ══════════════════════════════════════════════════════════
+// B2B vs B2C DATA & RENDER
+// ══════════════════════════════════════════════════════════
+const B2B_SECTIONS = [
+  { title:'Sales & First Contact', icon:'🗣️', rows:[
+    { aspect:'Who makes the booking', b2c:'Direct customer — walks in, calls, WhatsApp', b2b:'Registered trade agent submits on behalf of end customer', diff:true },
+    { aspect:'Agent pre-registration', b2c:'Not applicable', b2b:'Agent must be pre-registered with signed terms before any booking can be accepted (§14)', diff:true },
+    { aspect:'First point of contact', b2c:'Sales Expert — direct relationship from day 1', b2b:'B2B Account Manager — agent is the primary contact, not end customer', diff:true },
+    { aspect:'Pricing', b2c:'Retail price as published', b2b:'Net rate + commission as per signed agreement — not disclosed to end customer', diff:true },
+    { aspect:'Package customisation', b2c:'Standard package or FIT custom quote direct to customer', b2b:'Agent may request bespoke pricing — requires Account Manager + Director approval', diff:true },
+  ]},
+  { title:'Disclosure & Compliance', icon:'📋', rows:[
+    { aspect:'Ground Reality Disclosure', b2c:'Sales Expert presents all 14 items directly — customer signs before deposit', b2b:'Agent is contractually responsible for presenting disclosure to end customer', diff:true },
+    { aspect:'Who signs disclosure', b2c:'End customer signs directly', b2b:'Agent signs on behalf — legally responsible for passing to end customer', diff:true },
+    { aspect:'Passport data collection', b2c:'Booking Owner collects directly from customer', b2b:'Agent collects from end customer and submits to TripFactory', diff:true },
+    { aspect:'12 mandatory fields', b2c:'Collected directly by Booking Owner · no TBDs accepted', b2b:'Agent provides all fields · B2B Account Manager flags incomplete to agent within 24hrs', diff:false },
+  ]},
+  { title:'Payment & Finance', icon:'₹', rows:[
+    { aspect:'Payment terms', b2c:'Deposit + balance schedule · no credit (standard)', b2b:'Net rate settlement · credit terms possible if signed agreement + Finance Manager confirms', diff:true },
+    { aspect:'6-gate payment policy', b2c:'All 6 gates apply — customer pays on schedule', b2b:'All 6 gates apply — credit agreement may modify timing for Gates 4-5 only', diff:false },
+    { aspect:'TCS collection', b2c:'TCS collected from end customer on full package', b2b:'TCS collected from agent on net rate basis — agent may collect from customer separately', diff:true },
+    { aspect:'Outstanding dues at voucher', b2c:'Zero dues = zero exceptions. Vouchers held.', b2b:'Finance Manager credit confirmation covers — still requires written confirmation before release', diff:false },
+    { aspect:'Refund processing', b2c:'Refund to customer directly · standard cancellation policy', b2b:'Refund to agent · agent responsible for customer refund · commission clawback may apply', diff:true },
+  ]},
+  { title:'Operations & Handover', icon:'⚙️', rows:[
+    { aspect:'Handover file', b2c:'18-item file — standard', b2b:'18-item file PLUS agent reference number and billing summary', diff:true },
+    { aspect:'Special requests', b2c:'Booking Owner owns and documents all special requests', b2b:'Agent submits special requests · B2B Account Manager validates and documents · same approval required', diff:false },
+    { aspect:'Communication during tour', b2c:'Customer communicates directly with Customer Services', b2b:'Ideally via agent — Customer Services may handle directly for urgent operational issues', diff:true },
+    { aspect:'Departure freeze', b2c:'Standard freeze policy applies', b2b:'Agent must confirm final pax count by freeze deadline — no additions after. Seats released = cancellation charges.', diff:false },
+  ]},
+  { title:'Visa', icon:'🛂', rows:[
+    { aspect:'Document collection', b2c:'Visa Officer collects docs from Booking Owner who chases customer', b2b:'Agent collects all docs from end customer and submits to Visa team · Visa team does not chase customers', diff:true },
+    { aspect:'Agent SLA', b2c:'Not applicable', b2b:'Agent SLA: document submission within 48 hours of request', diff:true },
+    { aspect:'Rejection handling', b2c:'Visa team and Booking Owner handle together with customer', b2b:'Visa team informs agent · agent manages customer communication', diff:true },
+    { aspect:'8-stage tracking', b2c:'Standard 8-stage process', b2b:'Standard 8-stage process — same gates apply', diff:false },
+  ]},
+  { title:'Customer Services', icon:'🎧', rows:[
+    { aspect:'Post-sale queries', b2c:'Customer contacts CS directly — CRM logged against booking', b2b:'Agent is first point of contact for most queries — CS available for urgent operational issues', diff:true },
+    { aspect:'Complaint handling', b2c:'Customer raises complaint with CS → standard escalation path', b2b:'Agent raises complaint on behalf of customer → same L1/L2/L3 escalation path applies', diff:false },
+    { aspect:'Refund authority', b2c:'CS may offer information but Finance Manager authorises all refunds', b2b:'No refund discussion with end customer — all via agent with Finance Manager sign-off', diff:true },
+    { aspect:'Quality of service standard', b2c:'Measured by CSAT from end customer', b2b:'Measured by agent satisfaction + end customer CSAT where available', diff:true },
+  ]},
+  { title:'Ticketing', icon:'✈️', rows:[
+    { aspect:'Name submission', b2c:'Booking Owner submits names from customer data', b2b:'Agent submits names · B2B Account Manager spot-checks vs passport copies', diff:true },
+    { aspect:'Amendment authority', b2c:'Customer requests via Booking Owner', b2b:'Agent requests amendment · B2B Account Manager validates before submitting to Ticketing', diff:true },
+    { aspect:'T-30 sealing rule', b2c:'Standard — Booking Owner responsible', b2b:'Standard — B2B Account Manager responsible for chasing agent', diff:false },
+  ]},
+];
+
+function buildB2B() {
+  const c = document.getElementById('b2bContainer');
+  B2B_SECTIONS.forEach(sec => {
+    const s = document.createElement('div');
+    s.className = 'b2b-section';
+    const rows = sec.rows.map(row => `
+      <div class="b2b-row">
+        <div class="b2b-aspect-cell">${row.aspect}</div>
+        <div class="b2b-b2c-cell">${row.b2c}</div>
+        <div class="b2b-b2b-cell">${row.b2b}${row.diff?'<span class="b2b-diff">DIFFERS</span>':'<span class="b2b-same">SAME</span>'}</div>
+      </div>`).join('');
+    s.innerHTML = `<div class="b2b-section-title"><span>${sec.icon}</span>${sec.title}</div>
+      <div class="b2b-grid">
+        <div class="b2b-col-hdr b2b-aspect">Aspect</div>
+        <div class="b2b-col-hdr b2b-b2c">🧑 B2C — Direct Customer</div>
+        <div class="b2b-col-hdr b2b-b2b">🤝 B2B — Trade Agent</div>
+        ${rows}
+      </div>`;
+    c.appendChild(s);
+  });
+}
+buildB2B();
 </script>
+
 </body>
 </html>
